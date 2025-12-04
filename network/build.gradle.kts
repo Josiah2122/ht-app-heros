@@ -10,7 +10,7 @@ plugins {
 }
 
 android {
-    namespace = "com.hellotractor.notes.data"
+    namespace = "com.hellotractor.notes.networok"
     compileSdk {
         version = release(36)
     }
@@ -44,7 +44,6 @@ android {
 
 dependencies {
     implementation(project(":domain"))
-    implementation(project(":network"))
 
     implementation(libs.bundles.android)
     implementation(libs.bundles.hilt)
@@ -61,6 +60,7 @@ dependencies {
     debugImplementation(libs.chucker.debug)
     releaseImplementation(libs.chucker.release)
 
-    testImplementation(libs.bundles.unit.test.dependinces)
-    testImplementation(libs.bundles.android.test.dependencies)
+    testImplementation(libs.androidx.junit.core)
+    androidTestImplementation(libs.androidx.junit.test)
+    androidTestImplementation(libs.androidx.test.espresso.core)
 }

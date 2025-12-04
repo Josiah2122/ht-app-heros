@@ -9,21 +9,272 @@ appcompat = "1.7.1"
 material = "1.13.0"
 activity = "1.11.0"
 constraintlayout = "2.2.1"
-jetbrainsKotlinJvm = "2.0.21"
+jetbrainsKotlinJvm = "2.2.21"
+fragmentKtx = "1.8.9"
+mockitoKotlin = "5.3.1"
+protobufGradlePlugin = "0.9.4"
+workManager = "2.11.0"
+kotlinSerialization = "1.9.0"
+swipeToRefresh = "1.2.0-beta01"
+desugaring = "2.1.5"
+resultat = "1.0.0"
+imgGlide = "5.0.5"
+coroutines = "1.10.2"
+customFab = "1.2.1"
+kLintVersion = "14.0.1"
+room = "2.8.3"
+crashlyticsPlugin = "3.0.6"
+browserTab = "1.9.0"
+hilt = "2.57.2"
+hiltWorker = "1.3.0"
+navigation = "2.9.6"
+retrofit = "3.0.0"
+ksp = "2.0.21-1.0.27"
+chucker = "4.2.0"
+okhttp = "5.3.1"
+splashTheme = "1.2.0"
+lifecycleVersion = "2.9.4"
+archVersion = "2.2.0"
+legacySupportV4 = "1.0.0"
+protoDatastore = "1.1.7"
+firebaseBom = "34.6.0"
+remoteConfig = "22.1.2"
+androidxEspresso = "3.7.0"
+firebaseMessaging = "24.1.2"
+firebaseInstallation = "19.0.1"
+protoBuffDatastore = "4.33.1"
+playCrashlytics = "19.4.4"
+coilVersion = "2.7.0"
+imgCircular = "3.1.0"
+androidxArchCore = "2.2.0"
+timberLogger = "5.0.1"
+protoBuffPlugin = "0.9.5"
+kotlinSerializationPlugin = "2.2.21"
+kotlinExtensions = "2.1"
+phonePinView = "1.4.4"
+ccpVersion = "2.7.3"
+playMaps = "19.2.0"
+playUpdate = "2.1.0"
+playLocation = "21.3.0"
+playMapUtils = "3.19.1"
+playPlaces = "5.0.0"
+parcelizePlugin = "2.2.21"
+mockito = "5.20.0"
+mockk = "1.14.6"
+junitJunit = "4.12"
+movableExandableFab = "1.0.4"
+firebaseMessagingVersion = "25.0.1"
+firebaseDatabase = "22.0.1"
+playReview = "2.0.2"
+amplitude = "1.22.4"
+gson = "2.13.2"
+firebaseAuth = "24.0.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-junit = { group = "junit", name = "junit", version.ref = "junit" }
-androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
-androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-activity = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
-androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
-androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-splash = { group = "androidx.core", name = "core-splashscreen", version.ref = "splashTheme" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentKtx" }
+androidx-work-manager = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "workManager" }
+androidx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+androidx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+androidx-swipe-refresh = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swipeToRefresh" }
+androidx-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinSerialization" }
+androidx-constraint-layout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+com-google-firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics", version = "23.0.0" }
+kotlin-extension = { group = "com.github.davidepanidev", name = "kotlin-extensions", version.ref = "kotlinExtensions" }
+androidx-fragment-testing-manifest = { group = "androidx.fragment", name = "fragment-testing-manifest", version.ref = "fragmentKtx" }
+androidx-fragment-testing = { group = "androidx.fragment", name = "fragment-testing", version.ref = "fragmentKtx" }
+androidx-datastore = { group = "androidx.datastore", name = "datastore", version.ref = "protoDatastore" }
+com-google-protobuf-javalite = { group = "com.google.protobuf", name = "protobuf-javalite", version.ref = "protoBuffDatastore" }
+androidx-datastore-core = { group = "androidx.datastore", name = "datastore-preferences-core", version.ref = "protoDatastore" }
+androidx-datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "protoDatastore" }
+
+google-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+com-google-gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+com-amplitude = { group = "com.amplitude", name = "analytics-android", version.ref = "amplitude" }
+com-amplitude-client = { group = "com.amplitude", name = "android-sdk", version = "3.35.1" }
+
+androidx-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleVersion" }
+androidx-lifecycle-process = { group = "androidx.lifecycle", name = "lifecycle-process", version.ref = "lifecycleVersion" }
+androidx-lifecycle-common = { group = "androidx.lifecycle", name = "lifecycle-common", version.ref = "lifecycleVersion" }
+androidx-lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleVersion" }
+androidx-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleVersion" }
+androidx-saved-state = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "lifecycleVersion" }
+
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx", version.ref = "playCrashlytics" }
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-installation = { group = "com.google.firebase", name = "firebase-installations", version.ref = "firebaseInstallation" }
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging-ktx", version.ref = "firebaseMessaging" }
+firebase-remote-config = { group = "com.google.firebase", name = "firebase-config-ktx", version.ref = "remoteConfig" }
+
+image-coil = { group = "io.coil-kt", name = "coil", version.ref = "coilVersion" }
+image-circular = { group = "de.hdodenhof", name = "circleimageview", version.ref = "imgCircular" }
+image-coil-gif = { group = "io.coil-kt", name = "coil-gif", version.ref = "coilVersion" }
+image-glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "imgGlide" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-paging = { group = "androidx.room", name = "room-paging", version.ref = "room" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+
+hilt-worker = { group = "androidx.hilt", name = "hilt-work", version.ref = "hiltWorker" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+hilt-android-unit = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
+
+dagger-android = { group = "com.google.dagger", name = "dagger", version.ref = "hilt" }
+dagger-compiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "hilt" }
+
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
+androidx-browser-tab = { group = "androidx.browser", name = "browser", version.ref = "browserTab" }
+
+androidx-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+androidx-retrofit-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+okhttp-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+
+chucker-debug = { group = "com.github.chuckerteam.chucker", name = "library", version.ref="chucker" }
+chucker-release = { group = "com.github.chuckerteam.chucker", name = "library-no-op", version.ref="chucker" }
+
+com-google-truth = { group = "com.google.truth", name = "truth", version = "1.4.5" }
+androidx-arch-core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "androidxArchCore" }
+androidx-legacy-support-v4 = { group = "androidx.legacy", name = "legacy-support-v4", version.ref = "legacySupportV4" }
+core-library-desugaring = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "desugaring" }
+resultat = { group = "fr.haan.resultat", name = "resultat", version.ref = "resultat" }
+
+timber-logger = { group = "com.jakewharton.timber", name = "timber", version.ref = "timberLogger" }
+phone-pin-view = { group = "io.github.chaosleung", name = "pinview", version.ref = "phonePinView" }
+country-code-picker = { group = "com.hbb20", name = "ccp", version.ref = "ccpVersion" }
+custom-fab = { group = "com.nambimobile.widgets", name = "expandable-fab", version.ref = "customFab" }
+expandable-fab = { group = "io.github.hussienfahmy", name = "mefab", version.ref = "movableExandableFab" }
+
+org-json = { group = "org.json", name = "json", version = "20250517" }
+app-cash-turbine = { group = "app.cash.turbine", name = "turbine", version = "1.2.1" }
+org-robolectric = { group = "org.robolectric", name = "robolectric", version = "4.16" }
+androidx-room-testing = { group = "androidx.room", name = "room-testing", version.ref = "room" }
+androidx-test-rules = { group = "androidx.test", name = "rules", version = "1.7.0" }
+androidx-test-runner = { group = "androidx.test", name = "runner", version = "1.7.0" }
+androidx-test-orchestrator = { group = "androidx.test", name = "orchestrator", version = "1.6.1" }
+
+androidx-test-uiautomator = { group = "androidx.test.uiautomator", name = "uiautomator", version = "2.3.0" }
+com-github-tmurakami-dexopener = { group = "com.github.tmurakami", name = "dexopener", version = "2.0.5" }
+org-jetbrains-kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
+com-squareup-leakcanary-leakcanary-android = { group = "com.squareup.leakcanary", name = "leakcanary-android", version = "2.14" }
+com-squareup-okhttp3-mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "okhttp" }
+com-squareup-okhttp3-okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+
+#################### Junit ####################
+androidx-junit-core = { module = "junit:junit", version.ref = "junit" }
+androidx-junit-test = { module = "androidx.test.ext:junit", version.ref = "junitVersion" }
+
+#################### Mockito ####################
+org-mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
+org-mockito-android = { group = "org.mockito", name = "mockito-android", version.ref = "mockito" }
+org-mockito-kotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version = "6.0.0" }
+
+#################### Mockk ####################
+io-mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+io-mockk-android = { group = "io.mockk", name = "mockk-android", version.ref = "mockk" }
+
+#################### Androidx Espresso ####################
+androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxEspresso" }
+androidx-test-espresso-idling-resource = { group = "androidx.test.espresso", name = "espresso-idling-resource", version.ref = "androidxEspresso" }
+androidx-test-espresso-intents = { group = "androidx.test.espresso", name = "espresso-intents", version.ref = "androidxEspresso" }
+androidx-test-espresso-web = { group = "androidx.test.espresso", name = "espresso-web", version.ref = "androidxEspresso" }
+androidx-test-espresso-contrib = { group = "androidx.test.espresso", name = "espresso-contrib", version.ref = "androidxEspresso" }
+
+com-jakewharton-att = { group = "com.jakewharton.threetenabp", name = "threetenabp", version = "1.4.9" }
+
+
+google-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playMaps" }
+google-places = { group = "com.google.android.libraries.places", name = "places", version.ref = "playPlaces" }
+google-play-update = { group = "com.google.android.play", name = "app-update", version.ref = "playUpdate" }
+google-play-update-ktx = { group = "com.google.android.play", name = "app-update-ktx", version.ref = "playUpdate" }
+google-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playLocation" }
+com-google-map-utils = { group = "com.google.maps.android", name = "android-maps-utils", version.ref = "playMapUtils" }
+google-play-review = { group = "com.google.android.play", name = "review", version.ref = "playReview" }
+google-play-review-ktx = { group = "com.google.android.play", name = "review-ktx", version.ref = "playReview" }
+
+facebook-shimmer-effect = { group = "com.facebook.shimmer", name = "shimmer", version = "0.5.0" }
+google-firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging", version.ref = "firebaseMessagingVersion" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
+google-services = { id = "com.google.gms.google-services", version = "4.4.3" }
+google-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "crashlyticsPlugin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+hiltApplication = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+safe-args-navigation = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigation" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinSerializationPlugin" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
+jetbrains-kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "parcelizePlugin" }
+ktLint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "kLintVersion" }
+protobuf = { id = "com.google.protobuf", version.ref = "protoBuffPlugin" }
+
+[bundles]
+android = ["androidx-activity", "androidx-appcompat", "androidx-constraint-layout", "androidx-core-ktx", "androidx-coroutines", "androidx-fragment-ktx", "androidx-splash", "androidx-work-manager", "androidx-serialization", "androidx-swipe-refresh"]
+google = ["google-material"]
+google-playstore = ["google-play-update", "google-play-update-ktx"]
+utilities = ["timber-logger", "custom-fab"]
+otp = ["phone-pin-view", "country-code-picker"]
+room = ["room-ktx", "room-paging", "room-runtime"]
+hilt = ["hilt-android", "hilt-worker"]
+coroutines = ["androidx-coroutines", "androidx-coroutines-android"]
+datastore = ["androidx-datastore", "com-google-protobuf-javalite", "androidx-datastore-core", "androidx-datastore-preferences"]
+firebase = ["firebase-bom", "firebase-crashlytics", "firebase-installation", "firebase-messaging"]
+image-tools = ["image-circular", "image-coil", "image-coil-gif", "image-glide"]
+navigation = ["androidx-navigation-fragment", "androidx-navigation-ui"]
+retrofit = ["androidx-retrofit", "androidx-retrofit-gson", "com-squareup-okhttp3-okhttp", "okhttp-interceptor"]
+viewModels = ["androidx-viewmodel", "androidx-lifecycle-runtime", "androidx-livedata", "androidx-saved-state"]
+maps = ["google-location", "google-maps", "com-google-map-utils", "google-places", "google-play-update", "google-play-update-ktx"]
+review = ["google-play-review", "google-play-review-ktx"]
+
+# List of unit test dependencies
+unit-test-dependinces = [
+    "androidx-arch-core-testing",
+    "org-mockito-kotlin",
+    "org-jetbrains-kotlinx-coroutines-test",
+    "org-mockito-core",
+    "org-mockito-android",
+    "org-robolectric",
+    "org-json",
+    "app-cash-turbine",
+    "com-google-truth",
+    "io-mockk"
+]
+
+# List of android test dependencies
+android-test-dependencies = [
+    "androidx-arch-core-testing",
+    "androidx-legacy-support-v4",
+    "androidx-room-testing",
+    "androidx-test-rules",
+    "androidx-test-runner",
+    "androidx-test-uiautomator",
+    "com-github-tmurakami-dexopener",
+    "com-squareup-leakcanary-leakcanary-android",
+    "com-squareup-okhttp3-mockwebserver",
+    "com-squareup-okhttp3-okhttp",
+    "io-mockk-android",
+    "org-mockito-android",
+    "org-mockito-core",
+    "org-mockito-kotlin",
+    "androidx-fragment-testing"
+]
+
+# Android UI test dependencies
+android-ui-test-dependencies = [
+    "androidx-test-espresso-core",
+    "androidx-test-espresso-idling-resource",
+    "androidx-test-espresso-intents",
+    "androidx-test-espresso-web",
+    "androidx-test-espresso-contrib",
+    "io-mockk-android"
+]
+
 

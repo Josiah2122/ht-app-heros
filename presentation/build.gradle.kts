@@ -1,6 +1,16 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
-    alias(libs.plugins.android.library)
-    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.ktLint)
+    alias(libs.plugins.protobuf)
+    alias(libs.plugins.hiltApplication)
+    alias(libs.plugins.google.crashlytics)
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.jetbrains.kotlin.parcelize)
+    alias(libs.plugins.safe.args.navigation)
+    alias(libs.plugins.google.services)
 }
 
 android {
@@ -13,7 +23,7 @@ android {
         minSdk = 24
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
+        //consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -29,16 +39,24 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-    kotlinOptions {
-        jvmTarget = "11"
+
+    kotlin {
+        compilerOptions {
+            jvmTarget = JvmTarget.JVM_11
+        }
     }
 }
 
 dependencies {
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.bundles.coroutines)
+    implementation(libs.bundles.android)
+    implementation(libs.bundles.hilt)
+    implementation(libs.bundles.utilities)
+    implementation(libs.bundles.google)
+    implementation(libs.bundles.firebase)
+    implementation(libs.bundles.viewModels)
+    implementation(libs.bundles.navigation)
+    implementation(libs.bundles.image.tools)
+    implementation(libs.kotlin.extension)
+    ksp(libs.hilt.compiler)
 }
