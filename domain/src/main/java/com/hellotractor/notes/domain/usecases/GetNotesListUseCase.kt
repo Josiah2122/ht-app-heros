@@ -4,7 +4,7 @@ import com.hellotractor.notes.domain.models.Note
 import com.hellotractor.notes.domain.repositories.NotesRepository
 import jakarta.inject.Inject
 
-class GetNotesUseCase @Inject constructor(private val repository: NotesRepository) {
+class GetNotesListUseCase @Inject constructor(private val repository: NotesRepository) {
 
     suspend fun run(sortByDate: Boolean = false, sortByType: Note.NoteType? = null): List<Note> {
         var notes = repository.fetchNotes()
