@@ -47,6 +47,9 @@ android {
             jvmTarget = JvmTarget.JVM_11
         }
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
