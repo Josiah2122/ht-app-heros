@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.hellotractor.notes.domain.models.Note
 import com.hellotractor.notes.domain.usecases.GetNotesListUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
+//import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -46,9 +47,12 @@ class FarmsViewModel @Inject constructor(
     private fun loadNotes() {
         viewModelScope.launch {
             _state.update { it.copy(isLoading = true, errorMessage = null) }
+// Testing loading
+//            delay(2000)
 
             try {
                 val notes = getNotesUseCase.run() // Assuming this returns List<Note>
+//                val notes = emptyList<Note>() // testing for empty state
                 // Apply sorting based on current order
                 val sortedNotes = sortNotes(notes, _state.value.selectedOrder)
                 _state.update {
